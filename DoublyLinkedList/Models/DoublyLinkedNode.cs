@@ -8,4 +8,3 @@ namespace DoublyLinkedList.App.Models
         public int Data { get; set; }
     }
 }
-
