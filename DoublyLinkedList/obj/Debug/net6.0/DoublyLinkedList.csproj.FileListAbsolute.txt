@@ -1,0 +1,15 @@
+/Users/stanko_jevtic/Workspace/DoublyLinkedList/DoublyLinkedList/bin/Debug/net6.0/DoublyLinkedList
+/Users/stanko_jevtic/Workspace/DoublyLinkedList/DoublyLinkedList/bin/Debug/net6.0/DoublyLinkedList.deps.json
+/Users/stanko_jevtic/Workspace/DoublyLinkedList/DoublyLinkedList/bin/Debug/net6.0/DoublyLinkedList.runtimeconfig.json
+/Users/stanko_jevtic/Workspace/DoublyLinkedList/DoublyLinkedList/bin/Debug/net6.0/DoublyLinkedList.dll
+/Users/stanko_jevtic/Workspace/DoublyLinkedList/DoublyLinkedList/bin/Debug/net6.0/DoublyLinkedList.pdb
+/Users/stanko_jevtic/Workspace/DoublyLinkedList/DoublyLinkedList/obj/Debug/net6.0/DoublyLinkedList.csproj.AssemblyReference.cache
+/Users/stanko_jevtic/Workspace/DoublyLinkedList/DoublyLinkedList/obj/Debug/net6.0/DoublyLinkedList.GeneratedMSBuildEditorConfig.editorconfig
+/Users/stanko_jevtic/Workspace/DoublyLinkedList/DoublyLinkedList/obj/Debug/net6.0/DoublyLinkedList.AssemblyInfoInputs.cache
+/Users/stanko_jevtic/Workspace/DoublyLinkedList/DoublyLinkedList/obj/Debug/net6.0/DoublyLinkedList.AssemblyInfo.cs
+/Users/stanko_jevtic/Workspace/DoublyLinkedList/DoublyLinkedList/obj/Debug/net6.0/DoublyLinkedList.csproj.CoreCompileInputs.cache
+/Users/stanko_jevtic/Workspace/DoublyLinkedList/DoublyLinkedList/obj/Debug/net6.0/DoublyLinkedList.dll
+/Users/stanko_jevtic/Workspace/DoublyLinkedList/DoublyLinkedList/obj/Debug/net6.0/refint/DoublyLinkedList.dll
+/Users/stanko_jevtic/Workspace/DoublyLinkedList/DoublyLinkedList/obj/Debug/net6.0/DoublyLinkedList.pdb
+/Users/stanko_jevtic/Workspace/DoublyLinkedList/DoublyLinkedList/obj/Debug/net6.0/DoublyLinkedList.genruntimeconfig.cache
+/Users/stanko_jevtic/Workspace/DoublyLinkedList/DoublyLinkedList/obj/Debug/net6.0/ref/DoublyLinkedList.dll

@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "2H53+7lq3wQCoyCokOkj4JuKzn4SEJU8nmtaM8iPp5OeNf9XhFIIYp15EmM6A3+yZbOM1eAW1u1R5VRLYNzi5A==",
+  "success": true,
+  "projectFilePath": "/Users/stanko_jevtic/Workspace/DoublyLinkedList/DoublyLinkedList/DoublyLinkedList.App.csproj",
+  "expectedPackageFiles": [
+    "/Users/stanko_jevtic/.nuget/packages/microsoft.extensions.dependencyinjection/6.0.0/microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
+    "/Users/stanko_jevtic/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "/Users/stanko_jevtic/.nuget/packages/microsoft.extensions.logging/6.0.0/microsoft.extensions.logging.6.0.0.nupkg.sha512",
+    "/Users/stanko_jevtic/.nuget/packages/microsoft.extensions.logging.abstractions/6.0.0/microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "/Users/stanko_jevtic/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "/Users/stanko_jevtic/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "/Users/stanko_jevtic/.nuget/packages/system.diagnostics.diagnosticsource/6.0.0/system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+    "/Users/stanko_jevtic/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

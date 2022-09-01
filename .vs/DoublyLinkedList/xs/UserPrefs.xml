@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{0A833ADA-9B04-4415-B518-4D1E70C11B7B}|Default">
+  <MonoDevelop.Ide.ItemProperties.DoublyLinkedList.App PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="DoublyLinkedList/Models/DoublyLinkedNode.cs">
+    <Files>
+      <File FileName="DoublyLinkedList/Program.cs" Line="23" Column="2" />
+      <File FileName="DoublyLinkedList/Interfaces/IDoublyLinkedListService.cs" Line="14" Column="1" />
+      <File FileName="DoublyLinkedList/Services/DoublyLinkedListService.cs" Line="25" Column="53" />
+      <File FileName="DoublyLinkedList/Models/DoublyLinkedNode.cs" Line="12" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="DoublyLinkedList" expanded="True" selected="True">
+            <Node name="DoublyLinkedList.App" expanded="True">
+              <Node name="Interfaces" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
