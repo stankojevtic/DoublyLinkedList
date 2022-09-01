@@ -24,7 +24,7 @@ namespace DoublyLinkedList.App.DoublyLinkedList
             set => _previous = value;
         }
 
-        public Node(int data) //Use T
+        public Node(int data)
         {
             Data = data;
         }
