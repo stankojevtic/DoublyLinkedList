@@ -1,5 +1,4 @@
-﻿using DoublyLinkedList.App.Collections;
-using DoublyLinkedList.App.Interfaces;
+﻿using DoublyLinkedList.App.Interfaces;
 using DoublyLinkedList.App.Models;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -21,13 +20,24 @@ public class Program
         //doublyLinkedListService.AddLast(doublyLinkedList, new DoublyLinkedNode { Data = 25 });
 
 
-        var doublyLinkedList = new DoublyLinkedList.App.Collections.DoublyLinkedList();
+        var doublyLinkedList = new DoublyLinkedList.App.DoublyLinkedList.DoublyLinkedList();
 
         doublyLinkedList.AddFirst(10);
         doublyLinkedList.AddFirst(15);
         doublyLinkedList.AddFirst(20);
         doublyLinkedList.AddLast(25);
         doublyLinkedList.Remove(15);
+        doublyLinkedList.AddFirst(35);
+        doublyLinkedList.AddLast(3);
+
+        foreach (var node in doublyLinkedList)
+        {
+            Console.Write(node.Data + " ");
+        }
+
+        Console.WriteLine();
+
+        doublyLinkedList.QuickSort();
 
         foreach (var node in doublyLinkedList)
         {
