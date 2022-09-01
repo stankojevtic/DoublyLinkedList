@@ -3,6 +3,9 @@
 //using Microsoft.Extensions.DependencyInjection;
 
 using DoublyLinkedList.App.DoublyLinkedList;
+using DoublyLinkedList.App.Interfaces;
+using DoublyLinkedList.App.Services;
+using Microsoft.Extensions.DependencyInjection;
 
 public class Program
 {
@@ -21,8 +24,14 @@ public class Program
         //doublyLinkedListService.AddFirst(doublyLinkedList, new DoublyLinkedNode { Data = 20 });
         //doublyLinkedListService.AddLast(doublyLinkedList, new DoublyLinkedNode { Data = 25 });
 
+        //Setup DI
+        var serviceProvider = new ServiceCollection()
+            .AddTransient<ISortService<Node>, QuickSortService>()
+            .BuildServiceProvider();
 
-        var doublyLinkedList = new DoubleLinkedList();
+        var sortService = serviceProvider.GetService<ISortService<Node>>();
+
+        var doublyLinkedList = new DoubleLinkedList(sortService);
 
         doublyLinkedList.AddFirst(10);
         doublyLinkedList.AddFirst(15);
@@ -39,7 +48,7 @@ public class Program
 
         Console.WriteLine();
 
-        doublyLinkedList.QuickSort();
+        doublyLinkedList.Sort();
 
         foreach (var node in doublyLinkedList)
         {

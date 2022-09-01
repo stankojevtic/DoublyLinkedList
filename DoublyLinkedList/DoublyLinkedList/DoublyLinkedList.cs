@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Xml.Linq;
+using DoublyLinkedList.App.Interfaces;
 
 namespace DoublyLinkedList.App.DoublyLinkedList
 {
@@ -18,6 +19,13 @@ namespace DoublyLinkedList.App.DoublyLinkedList
         {
             get => _last;
             set => _last = value;
+        }
+
+        private readonly ISortService<Node> _sortService;
+
+        public DoubleLinkedList(ISortService<Node> sortService)
+        {
+            _sortService = sortService;
         }
 
         public void AddFirst(int data)
@@ -90,9 +98,9 @@ namespace DoublyLinkedList.App.DoublyLinkedList
             return false;
         }
 
-        public void QuickSort()
+        public void Sort()
         {
-            RecursiveQuickSort(_last, _first);
+            _sortService.Sort(_first);
         }
 
         public IEnumerator<Node> GetEnumerator()
@@ -110,39 +118,6 @@ namespace DoublyLinkedList.App.DoublyLinkedList
             return GetEnumerator();
         }
 
-        private Node Partition(Node first, Node last)
-        {
-            var pivot = first.Data;
 
-            Node partitionNode = last.Previous;
-            int temp;
-
-            for (var i = last; i != first; i = i.Next)
-            {
-                if (i.Data <= pivot)
-                {
-                    partitionNode = (partitionNode == null) ? last : partitionNode.Next;
-                    temp = partitionNode.Data;
-                    partitionNode.Data = i.Data;
-                    i.Data = temp;
-                }
-            }
-            partitionNode = (partitionNode == null) ? last : partitionNode.Next;
-            temp = partitionNode.Data;
-            partitionNode.Data = first.Data;
-            first.Data = temp;
-
-            return partitionNode;
-        }
-
-        private void RecursiveQuickSort(Node first, Node last)
-        {
-            if (first != null && last != first && last != first.Next)
-            {
-                Node temp = Partition(first, last);
-                RecursiveQuickSort(temp.Previous, last);
-                RecursiveQuickSort(first, temp.Next);
-            }
-        }
     }
 }
