@@ -1,6 +1,8 @@
-﻿using DoublyLinkedList.App.Interfaces;
-using DoublyLinkedList.App.Models;
-using Microsoft.Extensions.DependencyInjection;
+﻿//using DoublyLinkedList.App.Interfaces;
+//using DoublyLinkedList.App.Models;
+//using Microsoft.Extensions.DependencyInjection;
+
+using DoublyLinkedList.App.DoublyLinkedList;
 
 public class Program
 {
@@ -20,7 +22,7 @@ public class Program
         //doublyLinkedListService.AddLast(doublyLinkedList, new DoublyLinkedNode { Data = 25 });
 
 
-        var doublyLinkedList = new DoublyLinkedList.App.DoublyLinkedList.DoublyLinkedList();
+        var doublyLinkedList = new DoubleLinkedList();
 
         doublyLinkedList.AddFirst(10);
         doublyLinkedList.AddFirst(15);

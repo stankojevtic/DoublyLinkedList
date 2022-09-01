@@ -4,7 +4,7 @@ using System.Xml.Linq;
 
 namespace DoublyLinkedList.App.DoublyLinkedList
 {
-    public class DoublyLinkedList : IEnumerable<Node>
+    public class DoubleLinkedList : IEnumerable<Node>
     {
         private Node _first;
         public Node First
