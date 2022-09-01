@@ -6,7 +6,7 @@ using DoublyLinkedList.App.DoublyLinkedList;
 
 namespace DoublyLinkedList.App.Tests.DoublyLinkedList
 {
-    public class DoublyLinkedListTests
+    public class DoubleLinkedListTests
     {
         [Fact]
         public void AddFirst_WhenListIsEmpty_Success()
