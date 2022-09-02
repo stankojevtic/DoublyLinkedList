@@ -13,11 +13,6 @@ namespace DoublyLinkedList.App.Services
             RecursiveQuickSort(last, first);
         }
 
-        public void Sort<T>(T item)
-        {
-            throw new NotImplementedException();
-        }
-
         private Node<T> Partition<T>(Node<T> first, Node<T> last) where T : System.IComparable<T>
         {
             var pivot = first.Data;

@@ -19,13 +19,17 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Moq" Version="4.18.2" />
   </ItemGroup>
 
   <ItemGroup>
     <None Remove="DoublyLinkedList\" />
+    <None Remove="Moq" />
+    <None Remove="Services\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DoublyLinkedList\" />
+    <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DoublyLinkedList\DoublyLinkedList.App.csproj" />
