@@ -5,15 +5,20 @@ using DoublyLinkedList.App.Interfaces;
 
 namespace DoublyLinkedList.App.Services
 {
-    public class QuickSortService<T> : ISortService<Node<T>> where T : System.IComparable<T>
+    public class QuickSortService : ISortService
     {
-        public void Sort(Node<T> first)
+        public void Sort<T>(Node<T> first) where T : System.IComparable<T>
         {
             var last = NodeHelper<T>.FindLast(first);
             RecursiveQuickSort(last, first);
         }
 
-        private Node<T> Partition(Node<T> first, Node<T> last)
+        public void Sort<T>(T item)
+        {
+            throw new NotImplementedException();
+        }
+
+        private Node<T> Partition<T>(Node<T> first, Node<T> last) where T : System.IComparable<T>
         {
             var pivot = first.Data;
 
@@ -38,13 +43,13 @@ namespace DoublyLinkedList.App.Services
             return partitionNode;
         }
 
-        private void RecursiveQuickSort(Node<T> first, Node<T> last)
+        private void RecursiveQuickSort<T>(Node<T> first, Node<T> last) where T : System.IComparable<T>
         {
             if (first != null && last != first && last != first.Next)
             {
-                var temp = Partition(first, last);
-                RecursiveQuickSort(temp.Previous, last);
-                RecursiveQuickSort(first, temp.Next);
+                var temp = Partition<T>(first, last);
+                RecursiveQuickSort<T>(temp.Previous, last);
+                RecursiveQuickSort<T>(first, temp.Next);
             }
         }
     }

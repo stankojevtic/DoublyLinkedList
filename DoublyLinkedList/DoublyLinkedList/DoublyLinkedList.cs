@@ -21,9 +21,9 @@ namespace DoublyLinkedList.App.DoublyLinkedList
             set => _last = value;
         }
 
-        private readonly ISortService<Node<T>> _sortService;
+        private readonly ISortService _sortService;
 
-        public DoubleLinkedList(ISortService<Node<T>> sortService)
+        public DoubleLinkedList(ISortService sortService)
         {
             _sortService = sortService;
         }
@@ -100,7 +100,7 @@ namespace DoublyLinkedList.App.DoublyLinkedList
 
         public void Sort()
         {
-            _sortService.Sort(_first);
+            _sortService.Sort<T>(_first);
         }
 
         public IEnumerator<Node<T>> GetEnumerator()
