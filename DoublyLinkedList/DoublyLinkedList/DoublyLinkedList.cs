@@ -5,32 +5,32 @@ using DoublyLinkedList.App.Interfaces;
 
 namespace DoublyLinkedList.App.DoublyLinkedList
 {
-    public class DoubleLinkedList : IEnumerable<Node>
+    public class DoubleLinkedList<T> : IEnumerable<Node<T>> where T : System.IComparable<T>
     {
-        private Node _first;
-        public Node First
+        private Node<T> _first;
+        public Node<T> First
         {
             get => _first;
             set => _first = value;
         }
 
-        private Node _last;
-        public Node Last
+        private Node<T> _last;
+        public Node<T> Last
         {
             get => _last;
             set => _last = value;
         }
 
-        private readonly ISortService<Node> _sortService;
+        private readonly ISortService<Node<T>> _sortService;
 
-        public DoubleLinkedList(ISortService<Node> sortService)
+        public DoubleLinkedList(ISortService<Node<T>> sortService)
         {
             _sortService = sortService;
         }
 
-        public void AddFirst(int data)
+        public void AddFirst(T data)
         {
-            Node newNode = new Node(data);
+            Node<T> newNode = new Node<T>(data);
             newNode.Next = _first;
 
             if (_first == null)
@@ -45,9 +45,9 @@ namespace DoublyLinkedList.App.DoublyLinkedList
             _first = newNode;
         }
 
-        public void AddLast(int data)
+        public void AddLast(T data)
         {
-            Node newNode = new Node(data);
+            Node<T> newNode = new Node<T>(data);
 
             if (_last == null)
             {
@@ -62,13 +62,13 @@ namespace DoublyLinkedList.App.DoublyLinkedList
             _last = newNode;
         }
 
-        public bool Remove(int value)
+        public bool Remove(T value)
         {
-            Node currentNode = _first;
+            Node<T> currentNode = _first;
 
             while (currentNode != null)
             {
-                if (currentNode.Data == value)
+                if (currentNode.Data.Equals(value))
                 {
                     if (currentNode.Next == null)
                     {
@@ -103,9 +103,9 @@ namespace DoublyLinkedList.App.DoublyLinkedList
             _sortService.Sort(_first);
         }
 
-        public IEnumerator<Node> GetEnumerator()
+        public IEnumerator<Node<T>> GetEnumerator()
         {
-            Node current = _first;
+            Node<T> current = _first;
             while (current != null)
             {
                 yield return current;

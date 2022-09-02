@@ -6,4 +6,3 @@ namespace DoublyLinkedList.App.Interfaces
         void Sort(T item);
     }
 }
-
